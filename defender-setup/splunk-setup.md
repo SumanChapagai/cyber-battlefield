@@ -31,11 +31,12 @@ Settings → Forwarding and Receiving → Configure Receiving
 - **OS**: Windows 10
 - **Role**: Victim / Endpoint
 - **Static IP**: `192.168.0.12`
-###🔧 Components:
-- **Sysmon** - Installed via Sysinternals
+### 🔧 Components:
+- **Sysmon** - Installed via Sysinternals Suite
 - **Splunk Universal Forwarder**
 
-📁 Configurations:
+### 📁 Configuration Files:
+
 inputs.conf
 ```
 [WinEventLog://Microsoft-Windows-Sysmon/Operational]
@@ -59,23 +60,24 @@ server = 192.168.0.10:9997
 ```
 ## 🧱Index setup on Splunk
 Created the following indexes to organize log types:
-sysmon → for Sysmon event logs
-test → for firewall log forwarding tests
+- sysmon → for Sysmon event logs
+- test → for firewall log forwarding tests
 
-## Troubleshooting
+## 🛠️Troubleshooting
 ### Initially encountered the following error in splunkd.log
 ```Could not subscribe to Windows Event Log channel 'Microsoft-Windows-Sysmon/Operational': errorCode=5```
-🛠️ Solutions Applied:
-1.Verified Sysmon installation:
-Confirmed logging was active via Event Viewer under:
-Applications and Services Logs → Microsoft → Windows → Sysmon → Operational
-2.Modified SplunkForwarder service permissions:
-Opened services.msc
-Located SplunkForwarder
-Right-click → Properties → Log On tab
-Selected "Local System account" and enabled
-✅ "Allow service to interact with desktop"
-3. Restarted splunkforwarder service:
+## Solutions Applied:
+### 1. Verified Sysmon installation:
+- Confirmed logging was active via Event Viewer under:
+
+  Applications and Services Logs → Microsoft → Windows → Sysmon → Operational
+### 2. Modified SplunkForwarder service permissions:
+- Opened services.msc
+- Located SplunkForwarder
+- Right-click → Properties → Log On tab
+- Selected "Local System account" and enabled
+	✅ "Allow service to interact with desktop"
+### 3. Restarted splunkforwarder service:
 ```Restart-Service splunkforwarder```
 
 ✅ Final Result
