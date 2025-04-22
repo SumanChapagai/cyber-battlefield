@@ -26,7 +26,7 @@ This document outlines the setup of **Splunk Enterprise** on the **Defender (Ubu
 5. Enabled receiving on port 9997 through the Web UI:
 Settings → Forwarding and Receiving → Configure Receiving
 
-## 🎯 Defender (Ubuntu VM) - Splunk Installation
+## 🎯 Victim (Windows 10 VM) - Log Forwarding Setup
 ### 🖥️ System Info:
 - **OS**: Windows 10
 - **Role**: Victim / Endpoint
