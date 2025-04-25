@@ -80,5 +80,5 @@ Created the following indexes to organize log types:
 ### 3. Restarted splunkforwarder service:
 ```Restart-Service splunkforwarder```
 
-✅ Final Result
+## ✅ Final Result
 Logs from the Windows 10 machine are now successfully being forwarded to Splunk on the Ubuntu defender machine and appear under the sysmon index.
