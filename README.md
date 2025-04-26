@@ -27,22 +27,25 @@ A beginner-friendly cybersecurity lab simulating real-world attack and defense s
 | 7 | Patch & Final Report |
 
 ## 📂 Project Structure
-cyber-battlefield/
-├── README.md
-├── setup/
-│   └── VM_setup.md
-├── attack_scenarios/
-│   ├── scan_and_exploit.md
-│   └── c2_payload.md
-├── defense/
-│   ├── splunk_logs.md
-│   └── wireshark_analysis.md
-├── automation/
-│   └── packet_capture_script.py
-├── report/
-│   └── incident_report.md
 
-
+```cyber-battlefield/
+├── README.md  
+├── attack_scenarios/  
+│   ├── scan_and_exploit.md  
+│   ├── persistence.md  
+│   └── c2_payload.md  
+├── automation/  
+│   └── packet_capture_script.py  
+├── defender_setup/  
+│   └── splunk_setup.md  
+├── defense/  
+│   ├── splunk_dashboard.md  
+│   └── wireshark_analysis.md  
+├── report/  
+│   └── incident_report.md  
+├── setup/  
+│   └── VM_setup.md  
+```
 
 ## 🧰 Tools Used
 - Nmap, Metasploit, Netcat, Python (Attacker)
