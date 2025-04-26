@@ -34,6 +34,8 @@ It contains a PowerShell one-liner reverse shell to 192.168.0.11:4444.
 Get-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Run"
 ```
 This confirmed the “Updater” key is active and will trigger the script at every login.
+![Screenshot 2025-04-25 200720](https://github.com/user-attachments/assets/804f7845-c2ff-4382-8ba5-f684923e4ada)
+
 
 ## 📌 Notes
 - Tested manually by restarting the VM and observing an incoming shell.
