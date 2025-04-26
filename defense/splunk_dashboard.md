@@ -47,7 +47,8 @@ index=sysmon EventCode=3
 | table _time, Image, User, DestinationIp, DestinationPort
 ```
 ### 📊 Dashboard Panel
-![Screenshot 2025-04-25 110535](https://github.com/user-attachments/assets/ed9d6813-9856-489e-904c-a12cf574b827)
+![Screenshot 2025-04-25 110535](https://github.com/user-attachments/assets/a7151043-427a-4761-8b6d-9ccc4b7bd6bf)
+
 
 ### 🧠 Learnings
 - Splunk may not parse XML fields automatically for custom Sysmon logs
