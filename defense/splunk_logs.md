@@ -23,9 +23,8 @@ index=sysmon earliest=-30m latest=now
 
 - This indicates a manual clearing of logs.
 
-4. Verified by correlating EventCode 1102 (Windows Security log clear event).
 
-## 📊 Bonus: Splunk Panel — Detect Log Clearing
+## 📊 Splunk Panel — Detect Log Clearing
 
 ![Screenshot 2025-04-27 121900](https://github.com/user-attachments/assets/6b532f4c-1870-4579-965b-494767456baa)
 
@@ -44,3 +43,17 @@ index=sysmon earliest=-30m latest=now
   </chart>
 </panel>
 ```
+
+## 🚨 Splunk Alert: Detect Potential Log Clearing
+**Search Query:**
+```spl
+index=sysmon earliest=-10m latest=now
+| stats count AS event_count
+| where event_count < 100
+```
+![Screenshot 2025-04-27 122528](https://github.com/user-attachments/assets/ca8318e2-8b24-43ec-8046-63a0483ffe06)
+
+Trigger:
+- When event_count is less than 100 within 10 minutes.
+Goal:
+- Alert if Sysmon logging volume suddenly drops, indicating possible clearing of security logs or attacks on logging visibility.
