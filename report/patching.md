@@ -11,7 +11,7 @@ After detecting the presence of malicious activities (reverse shell via `shell.e
 |:---|:---|:---|
 | 1 | **Removed malicious binaries** (e.g., `shell.exe`) | ✅ Completed |
 | 2 | **Re-enabled Windows Defender** | ✅ Completed |
-| 3 | **Applied latest Windows Updates** via `sconfig` | ✅ Completed |
+| 3 | **Applied latest Windows Updates manually** | ✅ Completed |
 | 4 | **Reviewed active network connections** | ✅ Completed |
 | 5 | **Verified Sysmon service is active and logging** | ✅ Completed |
 | 6 | **Reset firewall rules to default secure settings** | ✅ Completed |
@@ -21,8 +21,6 @@ After detecting the presence of malicious activities (reverse shell via `shell.e
 ## 🔥 Key Commands Used
 
 ```powershell
-# Launch Windows Update interface
-sconfig
 
 # Re-enable Windows Defender
 Set-MpPreference -DisableRealtimeMonitoring $false
