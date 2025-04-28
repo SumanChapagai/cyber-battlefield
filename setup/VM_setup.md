@@ -23,7 +23,8 @@
 - OS: Windows 10 Enterprise Eval
 - Resources: 2 CPUs, 4 GB RAM
 - Network Adapters:
-  - Adapter 1: Host-Only (192.168.0.12)
+  - Adapter 1: NAT (enabled later to allow network traffic logging)
+  - Adapter 2: Host-Only (192.168.0.12)
 - Tools: XAMPP, DVWA, Sysmon (planned)
 - Vulnerabilities: Apache, MySQL, DVWA (security set to low), RDP enabled
 
