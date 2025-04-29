@@ -1,6 +1,6 @@
 # 🛡️ Cyber Battlefield
 
-A beginner-friendly cybersecurity lab simulating real-world attack and defense scenarios. This project is designed to showcase red team vs blue team techniques with clear documentation, monitoring, and detection.
+A hands-on cybersecurity lab simulating real-world attack paths and detection workflows using Splunk, Sysmon, custom attacker payloads, and more. This project is designed to showcase red team vs blue team techniques with clear documentation, monitoring, and detection, while learning skills and tools used by security professionals and adversaries.
 
 ## 🎯 Project Goals
 - Learn and simulate attacker vs. defender cybersecurity techniques
