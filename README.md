@@ -30,19 +30,23 @@ A beginner-friendly cybersecurity lab simulating real-world attack and defense s
 
 ```cyber-battlefield/
 ├── README.md  
-├── attack_scenarios/  
-│   ├── scan_and_exploit.md  
+├── attack_scenarios/
+│   ├── c2_payload.md  
+│   ├── log_manipulation.md  
 │   ├── persistence.md  
-│   └── c2_payload.md  
+│   ├── reverse_shell_exe.md  
+│   └── scan_and_exploit.md  
 ├── automation/  
 │   └── packet_capture_script.py  
 ├── defender_setup/  
 │   └── splunk_setup.md  
 ├── defense/  
-│   ├── splunk_dashboard.md  
+│   ├── splunk_dashboard.md
+│   ├── splunk_logs.md  
 │   └── wireshark_analysis.md  
-├── report/  
-│   └── incident_report.md  
+├── report/
+│   ├── incident_report.md  
+│   └── patching.md  
 ├── setup/  
 │   └── VM_setup.md  
 ```
